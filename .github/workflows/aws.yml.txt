@@ -7,12 +7,12 @@ on:
 
 env:
   AWS_REGION: us-east-1
-  ECR_REPOSITORY: Freelancer-Repo    
-  ECS_SERVICE: service-for-Freelancer-Repo-02
-  ECS_CLUSTER: cluster-for-Freelancer-Repo
-  ECS_TASK_DEFINITION: ./task-for-Freelancer-Repo-revision1.json
+  ECR_REPOSITORY: teamfreelancer  
+  ECS_SERVICE: service-for-teamfreelancer-02
+  ECS_CLUSTER: cluster-for-teamfreelancer
+  ECS_TASK_DEFINITION: ./task-for-teamfreelancer-revision1.json
 
-  CONTAINER_NAME: Freelancer-Repo
+  CONTAINER_NAME: teamfreelancer
 
 jobs:
   deploy:
