@@ -1,0 +1,94 @@
+{
+    "compatibilities": [
+        "EC2",
+        "MANAGED_INSTANCES",
+        "FARGATE"
+    ],
+    "containerDefinitions": [
+        {
+            "cpu": 0,
+            "environment": [],
+            "environmentFiles": [],
+            "essential": true,
+            "image": "767397852586.dkr.ecr.us-east-1.amazonaws.com/teamfreelancer@sha256:dea84c341ad2e325e3e675ac216da399ccb0d61f617cbc172f1aaed139df466e",
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/task-for-teamfreelancer",
+                    "awslogs-create-group": "true",
+                    "awslogs-region": "us-east-1",
+                    "awslogs-stream-prefix": "ecs"
+                },
+                "secretOptions": []
+            },
+            "mountPoints": [],
+            "name": "teamfreelancer",
+            "portMappings": [
+                {
+                    "appProtocol": "http",
+                    "containerPort": 3000,
+                    "hostPort": 3000,
+                    "name": "teamfreelancer-3000-tcp",
+                    "protocol": "tcp"
+                }
+            ],
+            "systemControls": [],
+            "ulimits": [],
+            "volumesFrom": []
+        }
+    ],
+    "cpu": "1024",
+    "enableFaultInjection": false,
+    "executionRoleArn": "arn:aws:iam::767397852586:role/LabRole",
+    "family": "task-for-teamfreelancer",
+    "memory": "3072",
+    "networkMode": "awsvpc",
+    "placementConstraints": [],
+    "registeredAt": "2025-11-11T22:12:01.720Z",
+    "registeredBy": "arn:aws:sts::767397852586:assumed-role/voclabs/user3268361=2164@saskpolytech.ca",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+        },
+        {
+            "name": "ecs.capability.execution-role-awslogs"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.29"
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "revision": 2,
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "status": "ACTIVE",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:767397852586:task-definition/task-for-teamfreelancer:2",
+    "taskRoleArn": "arn:aws:iam::767397852586:role/LabRole",
+    "volumes": [],
+    "tags": []
+}
