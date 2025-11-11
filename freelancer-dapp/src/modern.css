@@ -1,0 +1,182 @@
+/*
+ * modern.css
+ * New modern UI styles for the Freelancer DApp.
+ * Design Concept: Minimalist, Professional, and Dark Mode-friendly.
+ * Color Palette: Deep Navy (#0A192F), Light Gray (#CCD6F6), Accent Teal (#64FFDA).
+ */
+
+/* --- Base Styles and Typography --- */
+body {
+    background-color: #0A192F !important; /* Deep Navy Background */
+    color: #CCD6F6 !important; /* Light Gray Text */
+    font-family: 'Inter', sans-serif !important;
+    line-height: 1.6 !important;
+}
+
+/* Import Inter font (assuming it will be added to index.html or is already available) */
+/* For now, we'll rely on system fonts but design for Inter */
+
+h1, h2, h3, h4, h5, h6 {
+    color: #CCD6F6 !important;
+    font-weight: 700 !important;
+}
+
+/* Accent color for links and primary text */
+.text-accent {
+    color: #64FFDA !important;
+}
+
+/* --- Utility Classes (Overriding Tailwind/Existing) --- */
+
+/* Primary Button Style (Accent Teal) */
+.btn-primary {
+    background-color: #64FFDA !important;
+    color: #0A192F !important;
+    border: 1px solid #64FFDA !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 4px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-primary:hover {
+    background-color: rgba(100, 255, 218, 0.1) !important;
+    color: #64FFDA !important;
+}
+
+/* Secondary Button Style (Outline) */
+.btn-secondary {
+    background-color: transparent !important;
+    color: #64FFDA !important;
+    border: 1px solid #64FFDA !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 4px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(100, 255, 218, 0.1) !important;
+}
+
+/* Card/Panel Style */
+.card-modern {
+    background-color: #112240 !important; /* Slightly lighter Navy for contrast */
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid #233554 !important;
+    padding: 1.5rem !important;
+    transition: all 0.3s ease !important;
+}
+
+.card-modern:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Input/Form Field Style */
+input[type="text"], input[type="number"], textarea, select {
+    background-color: #0A192F !important;
+    border: 1px solid #233554 !important;
+    color: #CCD6F6 !important;
+    padding: 0.5rem 0.75rem !important;
+    border-radius: 4px !important;
+    width: 100% !important;
+    transition: border-color 0.3s ease !important;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, textarea:focus, select:focus {
+    border-color: #64FFDA !important;
+    outline: none !important;
+}
+
+/* --- Component Overrides (Based on App.js analysis) --- */
+
+/* Navigation Bar */
+.nav-bar-modern {
+    background-color: #112240 !important;
+    border-bottom: 1px solid #233554 !important;
+    box-shadow: none !important;
+}
+
+.nav-link-modern {
+    color: #CCD6F6 !important;
+    font-weight: 500 !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 4px !important;
+    transition: color 0.3s ease, background-color 0.3s ease !important;
+}
+
+.nav-link-modern:hover {
+    color: #64FFDA !important;
+    background-color: #0A192F !important;
+}
+
+/* Footer */
+.footer-modern {
+    background-color: #0A192F !important;
+    border-top: 1px solid #233554 !important;
+    color: #8892B0 !important;
+}
+
+/* Status Badges - Updated to fit dark theme */
+.status-pending {
+    background-color: #495670 !important;
+    color: #FFD700 !important;
+    border-radius: 4px !important;
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.875rem !important;
+}
+
+.status-approved {
+    background-color: #334155 !important;
+    color: #5EEAD4 !important;
+    border-radius: 4px !important;
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.875rem !important;
+}
+
+.status-paid {
+    background-color: #153A47 !important;
+    color: #64FFDA !important;
+    border-radius: 4px !important;
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.875rem !important;
+}
+
+.status-completed {
+    background-color: #1E3A8A !important;
+    color: #93C5FD !important;
+    border-radius: 4px !important;
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.875rem !important;
+}
+
+/* Custom scrollbar - Updated for dark theme */
+::-webkit-scrollbar-track {
+    background: #0A192F;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #233554;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #495670;
+}
+
+/* General Layout - Ensure the main container matches the new background */
+.min-h-screen.bg-gray-50 {
+    background-color: #0A192F !important;
+}
+
+/* Gradient text - Adjusted for dark theme visibility */
+.gradient-text {
+    background: linear-gradient(135deg, #64FFDA 0%, #CCD6F6 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+

@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  /* Removed default font-family to allow modern.css (which uses Inter) to take effect */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
