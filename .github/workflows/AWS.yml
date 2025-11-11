@@ -10,7 +10,7 @@ env:
   ECR_REPOSITORY: teamfreelancer  
   ECS_SERVICE: service-for-teamfreelancer-02
   ECS_CLUSTER: cluster-for-teamfreelancer
-  ECS_TASK_DEFINITION: ./task-for-teamfreelancer-revision1.json
+  ECS_TASK_DEFINITION: ./task-for-teamfreelancer-revision2.json
 
   CONTAINER_NAME: teamfreelancer
 
